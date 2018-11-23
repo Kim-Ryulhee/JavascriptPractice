@@ -12,7 +12,7 @@ form.append(button);
 var result = document.createElement('div');
 document.body.append(result);
 
-form.addEventListener('click', function(e) {
+form.addEventListener('submit', function(e) {
     e.preventDefault();
     if(word.textContent[word.textContent.length - 1] === text.value[0]) {
         result.textContent = '딩동댕';
